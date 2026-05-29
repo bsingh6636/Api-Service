@@ -10,7 +10,7 @@ const local1 = 'http://localhost:3001/'
 const local2 = 'http://localhost:3000'
 
 app.use(cors({
-    origin: [FRONTENDURL, bcd, local1, local2],
+    origin: [...FRONTENDURL, bcd, local1, local2],
     credentials: true,
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],

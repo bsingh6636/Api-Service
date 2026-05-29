@@ -23,7 +23,7 @@ import { presentDateGenerator } from './Functions/getCurrentTime';
 
 
 // Import from others
-const BackEndPort = (process.env.REACT_APP_NODE_ENV === "development" || process.env.REACT_APP_NODE_ENV === "vm_prod") ? "http://localhost:9090/api" : "https://api-service-prod3.vercel.app/api";
+const BackEndPort = process.env.REACT_APP_NODE_ENV === "development" ? "http://localhost:9090/api" : "/api";
 
 // Export statements
 export {
